@@ -24,10 +24,10 @@ config= merge(baseConfig,{
               {
                loader: 'css-loader',
                options:{
-                //    modules:{
-                //        localIdentName:'[path]-[name]-[hash:base64:5]',//stylus文件模块化
-                //    },
-                //    localsConvention: 'camelCase',//开启驼峰main-header=mainHeader
+                   modules:{
+                       localIdentName:'[path]-[name]-[hash:base64:5]',//stylus文件模块化
+                   },
+                   localsConvention: 'camelCase',//开启驼峰main-header=mainHeader
 
                }
               },
@@ -42,7 +42,7 @@ config= merge(baseConfig,{
           }
         ]
       },
-    plugins:[ 
+    plugins:[
         new HtmlWebpackPlugin(),
         new webpack.HotModuleReplacementPlugin(),
     ],
@@ -55,7 +55,7 @@ config= merge(baseConfig,{
         errors:true
     },
     hot:true
-    } 
+    }
 })
 }
 else{

@@ -28,9 +28,9 @@ const config = {
           {
             loader: 'css-loader',
             options:{
-              // modules:{
-              //   localIdentName:'[path]-[name]-[hash:base64:5]',
-              // }
+              modules:{
+                localIdentName:'[path]-[name]-[hash:base64:5]',
+              }
             }
 
           }

@@ -1,48 +1,43 @@
 <template>
     <div id="app">
       <Header></Header>
-      <div :class="$style.red">
+      <div :class="$style.red" >
           ...ddd
         </div>
 
     </div>
   </template>
 
-  <script>
+<script>
 
-  import Header from './layout/header.vue'
+import Header from './layout/header.vue'
 
+export default {
 
-  export default {
-
-    data(){
-      return{
-    isRed: true,
-      }
+  data () {
+    return {
+      isRed: true
     }
-    ,
-    mounted() {
-      console.log("ClassStyle:" )
-    },
+  },
+  mounted () {
+    console.log('ClassStyle:  ')
+  },
 
-    components: {
-      Header,
-      // Footer,
-      // Loading
-      // Todo
-    },
-    computed: {
-      appstyle(){
-        return  'content_app'
-      }
-    },
-
-
-
+  components: {
+    Header
+    // Footer,
+    // Loading
+    // Todo
+  },
+  computed: {
+    appstyle () {
+      return 'content_app'
+    }
   }
 
+}
 
-  </script>
+</script>
 
   <style lang="stylus" module>
       .main-header{
@@ -58,4 +53,3 @@
     }
 
   </style>
-

@@ -3,7 +3,7 @@
   "plugins": [
     "html"
   ],
-  "parser": "babel-eslint",
+  "parser": "vue-eslint-parser",
   "rules": {
     "no-new": "off"
   }
