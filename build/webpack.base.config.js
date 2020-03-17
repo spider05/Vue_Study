@@ -15,17 +15,17 @@ const config = {
   },
   module: {
     rules: [
-      // {
-      //   test: /\.(vue|js|jsx)$/,
-      //   loader: 'eslint-loader',
-      //   exclude: /node_modules/,
-      //   enforce: 'pre'
-      // },
+      {
+        test: /\.(vue|js|jsx)$/,
+        loader: 'eslint-loader',
+        exclude: /node_modules/,
+        enforce: 'pre'
+      },
       {
         test: /\.css$/,
         use:[
           'style-loader',
-          { 
+          {
             loader: 'css-loader',
             options:{
               // modules:{
@@ -34,7 +34,7 @@ const config = {
             }
 
           }
-         
+
         ]
       },
       {

@@ -22,7 +22,7 @@
     }
     ,
     mounted() {
-      // console.log("ClassStyle:",$style)
+      console.log("ClassStyle:" )
     },
 
     components: {
